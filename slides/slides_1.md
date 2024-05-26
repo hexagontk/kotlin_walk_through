@@ -50,18 +50,3 @@
   <!-- .element: class="fragment" data-fragment-index="3" -->
 * Dejaros con ganas de más
   <!-- .element: class="fragment" data-fragment-index="4" -->
-
----
-
-<!-- .slide: data-visibility="hidden" -->
-
-## Mantente al tanto
-* Material y código: https://github.com/hexagontk/kotlin_walk_through
-* Sígueme en: [X (anteriormente Twitter)][Twitter], [GitHub] o [LinkedIn] (@jaguililla)
-* Sigue [@hexagontk] (OSS en Kotlin)
-* Y si te gusta el proyecto, compártelo... Y ponle una estrella!
-
-[@hexagontk]: https://twitter.com/hexagontk
-[Twitter]: https://twitter.com/jaguililla
-[GitHub]: https://github.com/jaguililla
-[LinkedIn]: https://www.linkedin.com/in/jaguililla

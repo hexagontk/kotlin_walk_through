@@ -46,7 +46,7 @@ class SlidesBrowser : Application() {
 
 serve(HttpServerSettings(bindPort = 2001)) {
     get(callback = FileCallback("slides.html"))
-    get(pattern = "/slides.md", callback = FileCallback("slides.md"))
+    get(pattern = "/slides.md", callback = FileCallback("slides_2.md"))
 }
 
 Application.launch(SlidesBrowser::class.java)
