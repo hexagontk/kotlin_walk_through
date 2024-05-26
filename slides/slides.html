@@ -1,0 +1,62 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta lang="en">
+
+  <title>Kotlin Walk Through</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/monokai.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/night.min.css"/>
+
+  <style>
+    :root {
+      --r-heading-text-transform: none;
+
+      --r-heading-color: #279FE7;
+
+      --r-main-font-size: 1.5rem;
+      --r-heading1-size: 4rem;
+    }
+  </style>
+</head>
+
+<div class="reveal">
+  <div class="slides">
+    <section
+      data-markdown="slides.md"
+      data-separator="^\n---\n$"
+      data-separator-vertical="^\n--\n$">
+    </section>
+  </div>
+</div>
+
+<script type="module">
+  import Reveal from "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.esm.min.js";
+  import Markdown from
+    "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.esm.min.js";
+  import Highlight from
+    "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.esm.min.js";
+  import Notes from
+    "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.esm.min.js";
+
+  Reveal.initialize({
+    width: 1600,
+    height: 900,
+    margin: 0.01,
+
+    controls: false,
+    progress: false,
+    history: false,
+    center: true,
+
+    plugins: [Markdown, Highlight, Notes]
+  });
+</script>
