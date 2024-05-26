@@ -3,8 +3,30 @@
    GENERICS
    =============================================================================
 
-   TODO
+   Variance (only types)
+   - <out T> producer, covariant (inheritance of C<T> same as T)
+   - <in T> consumer, contravariant (inheritance of C<T> opposite of T)
+
+   Invariant (types and functions)
+   - <T> invariant (no inheritance on the generic type)
+   - <T : Bound> bounded type (restrict valid types, like Java extends)
+   - <T : Bound> where T : Interface (restrict the target types a bit more)
+   - <T & Any> definitely non-nullable (forces that the type is not nullable)
+   - <*> star projection
  */
+
+data class Box<out T>(val item: T)
+
+val x: Box<Int> = Box(1)
+val y: Box<Double> = Box(1.0)
+
+fun unwrap(box: Box<Number>): Number = box.item
+
+// Calls can be made because Box is covariant (Box<Int> extends Box<Number>)
+unwrap(x)
+unwrap(y)
+
+class NumberBox<T> where T : Number, T : Comparable<T>
 
 /*
    ARRAYS AND RANGES

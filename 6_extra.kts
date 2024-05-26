@@ -1,17 +1,29 @@
 
 @file:Suppress("USELESS_IS_CHECK", "FunctionName")
+import kotlin.test.assertContains
+import kotlin.test.assertEquals
+import kotlin.test.assertNotEquals
+import kotlin.test.assertSame
+import kotlin.test.assertNotSame
+import kotlin.test.assertFailsWith
 
 /*
    TESTING
    =============================================================================
-
-   TODO Add other Kotlin default assertions
  */
 
 // Functions can have names with spaces (useful for tests)
 fun `If this then that`() {
-    assertEquals("a", "a")
     assert("" is String)
+
+    assertFailsWith<IllegalStateException> { error("Fail") }
+
+    assertContains(setOf('a', 'b', 'c'), 'c')
+
+    assertEquals("a", "a")
+    assertNotEquals("a", "b")
+    assertSame("a", "a")
+    assertNotSame("a", "b")
 }
 
 /*

@@ -5,6 +5,8 @@ import java.lang.IllegalStateException
 /*
    STANDARD LIBRARY
    =============================================================================
+
+   - Scope functions: let, run, with, apply, also
  */
 
 // Take receiver and map it to another value
