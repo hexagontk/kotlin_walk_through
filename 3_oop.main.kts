@@ -87,8 +87,8 @@ person.age = 80
    Extension fields are syntactic sugar for extension methods
  */
 
-val Collection<T>.head: T
-    get() = this.get(0)
+val <T> List<T>.head: T?
+    get() = this[0]
 
 /*
    DATA CLASSES

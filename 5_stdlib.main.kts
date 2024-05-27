@@ -1,6 +1,5 @@
 import java.io.File
 import java.io.FileReader
-import java.lang.IllegalStateException
 
 /*
    STANDARD LIBRARY

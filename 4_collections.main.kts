@@ -86,6 +86,7 @@ mutableMap["a"] = 'C'
    DESTRUCTURING
    =============================================================================
  */
+data class Person(val name: String, val age: Int = 0)
 
 val (name, age) = Person("Name", 18)
 assert(name == "Name")
