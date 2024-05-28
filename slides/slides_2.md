@@ -32,7 +32,6 @@
 * Material y código: https://github.com/hexagontk/kotlin_walk_through
 * Sígueme en: [X (anteriormente Twitter)][Twitter], [GitHub] o [LinkedIn] (@jaguililla)
 * Sigue [@hexagontk] (OSS en Kotlin)
-* Y si te gusta el proyecto, compártelo... Y ponle una estrella!
 
 [@hexagontk]: https://twitter.com/hexagontk
 [Twitter]: https://twitter.com/jaguililla
