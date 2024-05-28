@@ -24,7 +24,7 @@ val text = """
  * 5. Show the three most used words
  * 6. Print their sum.
  *
- * 15 lines (586 chars)
+ * 15 lines (447 chars)
  */
 text
     .split("\n") // Splits lines

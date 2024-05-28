@@ -33,7 +33,7 @@ void main() {
      * 5. Show the three most used words
      * 6. Print their sum.
      *
-     * 19 lines (817 chars)
+     * 19 lines (712 chars)
      */
     var sum = stream(text.split("\n")) // You have to wrap collections into streams
         .flatMap(it -> stream(it.split(" ")))
