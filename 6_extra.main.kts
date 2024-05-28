@@ -72,8 +72,8 @@ fun dokka(intParam: Int, stringParam: String): String =
 
    - Official Android language (Google support)
    - Web (Kotlin): Ktor, HTTP4K, Hexagon
-   - Web (Java): Vert.x, Spring Boot, Micronaut, Jooby and Javalin
-   - Testing: MockK, Kotest and Spek
+   - Web (Java): Vert.x, Spring Boot, Micronaut, Quarkus, and Javalin
+   - Testing: MockK, Kotest
    - Dependency injection: Kodein and Injekt
 
    - It's very easy to use Java libraries, and they work perfectly
