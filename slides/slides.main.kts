@@ -1,6 +1,6 @@
 #!/usr/bin/env kotlin
 
-@file:DependsOn("com.hexagonkt:http_server_netty:3.5.3")
+@file:DependsOn("com.hexagonkt:http_server_netty:3.6.1")
 @file:DependsOn("com.github.mouse0w0:darculafx:9.0.0")
 @file:DependsOn("org.openjfx:javafx-controls:21")
 @file:DependsOn("org.openjfx:javafx-web:21")
@@ -45,8 +45,8 @@ class SlidesBrowser : Application() {
 }
 
 serve(HttpServerSettings(bindPort = 2001)) {
-    get(callback = FileCallback("slides.html"))
-    get(pattern = "/slides.md", callback = FileCallback("slides_2.md"))
+    get(callback = FileCallback("slides/slides.html"))
+    get(pattern = "/slides.md", callback = FileCallback("slides/slides_2.md"))
 }
 
 Application.launch(SlidesBrowser::class.java)
